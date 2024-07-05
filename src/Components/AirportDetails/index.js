@@ -40,7 +40,7 @@ const AirportDetail = () => {
   return (
     <Provider
       theme={defaultTheme}
-      UNSAFE_style={{ width: "100vw", height: "110vh" }}
+      UNSAFE_style={{ width: "100vw", minheight: "110vh" }}
     >
       <Head />
       <Flex direction="row">
@@ -232,7 +232,7 @@ const AirportDetail = () => {
           <View>
             <Desctiption />
           </View>
-          <View marginTop={20}>
+          <View marginTop={20} marginBottom={30}>
             <Lounge />
           </View>
         </View>
