@@ -24,6 +24,12 @@ const FormComponent = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     formData(formValues);
+    setFormValues({
+      airportName: "",
+      Country: "",
+      CountryCode: "",
+      Terminals: "",
+    });
   };
 
   const handleReset = () => {

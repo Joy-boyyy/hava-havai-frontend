@@ -49,6 +49,7 @@ class Home extends Component {
 
     this.setState((prevData) => ({
       userFormData: [...prevData.userFormData, myFOrmData],
+      toAddOrNot: false,
     }));
   };
 
@@ -59,7 +60,7 @@ class Home extends Component {
     return (
       <Provider
         theme={defaultTheme}
-        UNSAFE_style={{ width: "100vw", height: "100vh" }}
+        UNSAFE_style={{ width: "100vw", minHeight: "100vh" }}
       >
         <Head />
         <Flex direction="row">
